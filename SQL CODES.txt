@@ -1,0 +1,10 @@
+SELECT FirstName, LastName, BirthDate FROM Employees;
+
+
+
+SELECT ContactName, Address, City, PostalCode, Country FROM Suppliers
+WHERE Country = 'Japan' OR Country = 'Spain' OR Country = 'Sweden';
+
+
+SELECT CustomerName, City FROM Customers
+WHERE Country NOT IN ('Portugal','Switzerland','Finland');
